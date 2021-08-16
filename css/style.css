@@ -23,6 +23,7 @@ html {
   scroll-padding-top: 5.5rem;
   scroll-behavior: smooth;
 }
+/* ########## HEADER ########## */
 header {
   position: fixed;
   top: 0;
@@ -77,7 +78,56 @@ header .icons a:hover {
 header .icons #menu-bars {
   display: none;
 }
-
+/* ########## END OF HEADER ########## */
+/* ########## SEARCH FORM ########## */
+#search-form {
+  position: fixed;
+  top: -110%;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1004;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+}
+#search-form.active {
+  top: 0;
+}
+#search-form #search-box {
+  width: 50rem;
+  border-bottom: 0.1rem solid #fff;
+  padding: 1rem 0;
+  color: #fff;
+  font-size: 3rem;
+  text-transform: none;
+  background: none;
+}
+#search-form #search-box::placeholder {
+  color: #eee;
+}
+#search-form #search-box::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+#search-form label {
+  color: #fff;
+  cursor: pointer;
+  font-size: 3rem;
+}
+#search-form label:hover {
+  color: var(--green);
+}
+#search-form #close {
+  position: absolute;
+  color: #fff;
+  cursor: pointer;
+  top: 2rem;
+  right: 3rem;
+  font-size: 5rem;
+}
+/* ########## END OF SEARCH FORM ########## */
 /* ########## MEDIA QUERIES ########## */
 @media (max-width: 991px) {
   html {
@@ -102,12 +152,19 @@ header .icons #menu-bars {
     padding: 1rem;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
+  header .navbar.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
   header .navbar a {
     display: block;
     padding: 1.5rem;
     margin: 1rem 0;
     font-size: 2rem;
     background: #eee;
+  }
+  #search-form #search-box {
+    width: 90%;
+    margin: 0 1rem;
   }
 }
 @media (max-width: 991px) {
