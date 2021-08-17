@@ -454,7 +454,6 @@ margin: 0 auto;
 .review .box .stars i {
   color: var(--main-color);
   font-size: 1.7rem;
-
 }
 /* ########## END OF REVIEW SECTION ########## */
 /* ########## CONTACT SECTION ########## */
@@ -463,6 +462,8 @@ margin: 0 auto;
   flex-wrap: wrap;
   gap: 1.5rem;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .contact .row .image {
   flex: 1 1 35rem;
@@ -497,6 +498,13 @@ text-transform: none;
   width: 100%;
 }
 /* ########## END OF CONTACT SECTION ########## */
+/* ########## BRAND SECTION ########## */
+.brand-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+/* ########## END OF BRAND SECTION ########## */
 /* ########## MEDIA QUERIES ########## */
 @media (max-width: 1200px) {
   html {
