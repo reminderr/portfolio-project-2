@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,28 +12,29 @@
   <link rel="stylesheet" href="css/style.css">
 
 </head>
+
 <body>
   <!-- ########## HEADER ########## -->
   <header>
     <div id="menu-bar" class="fas fa-bars"></div>
-  <a href="#" class="logo"><span>T</span>ravel</a>
-  <nav class="navbar">
-    <a href="#home">home</a>
-    <a href="#book">book</a>
-    <a href="#packages">packages</a>
-    <a href="#services">services</a>
-    <a href="#gallery">gallery</a>
-    <a href="#review">review</a>
-    <a href="#contact">contact</a>
-  </nav>
-  <div class="icons">
-    <i class="fas fa-search" id="search-btn"></i>
-    <i class="fas fa-user" id="login-btn"></i>
-  </div>
-  <form action="" class="search-bar-container">
-    <input type="search" id="search-bar" placeholder="search here...">
-    <label for="search-bar" class="fas fa-search"></label>
-  </form>
+    <a href="#" class="logo"><span>T</span>ravel</a>
+    <nav class="navbar">
+      <a href="#home">home</a>
+      <a href="#book">book</a>
+      <a href="#packages">packages</a>
+      <a href="#services">services</a>
+      <a href="#gallery">gallery</a>
+      <a href="#review">review</a>
+      <a href="#contact">contact</a>
+    </nav>
+    <div class="icons">
+      <i class="fas fa-search" id="search-btn"></i>
+      <i class="fas fa-user" id="login-btn"></i>
+    </div>
+    <form action="" class="search-bar-container">
+      <input type="search" id="search-bar" placeholder="search here...">
+      <label for="search-bar" class="fas fa-search"></label>
+    </form>
   </header>
   <!-- ########## END OF HEADER ########## -->
   <!-- ########## LOGIN FORM ########## -->
@@ -50,7 +52,27 @@
     </form>
   </div>
   <!-- ########## END OF LOGIN FORM ########## -->
+  <!-- ########## HOME SECTION ########## -->
+  <section class="home" id="home">
+    <div class="content">
+      <h3>adventure is worthwhile</h3>
+      <p>discover new places with us, adventure awaits</p>
+      <a href="#" class="btn">discover more</a>
+    </div>
+    <div class="controls">
+      <span class="vid-btn active" data-src="img/vid-1.mp4"></span>
+      <span class="vid-btn" data-src="img/vid-2.mp4"></span>
+      <span class="vid-btn" data-src="img/vid-3.mp4"></span>
+      <span class="vid-btn" data-src="img/vid-4.mp4"></span>
+      <span class="vid-btn" data-src="img/vid-5.mp4"></span>
+    </div>
+    <div class="video-container">
+      <video src="img/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+  </section>
+  <!-- ########## END OF HOME SECTION ########## -->
   <!-- ########## JAVASCRIPT ########## -->
   <script src="js/script.js"></script>
 </body>
+
 </html>
