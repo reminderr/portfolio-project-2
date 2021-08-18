@@ -435,6 +435,9 @@ header .search-bar-container label:hover {
   padding-bottom: 2rem;
   max-width: 1200px;
 }
+.review .slider {
+  display: flex;
+}
 .review .box {
   padding: 2rem;
   text-align: center;
