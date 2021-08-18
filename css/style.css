@@ -1,3 +1,4 @@
+/* ########## UNIVERSAL STYLES ########## */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
 :root {
   --main-color: #ff9500;
@@ -54,6 +55,7 @@ section {
   background: rgba(255, 165, 0, 0.2);
   color: var(--main-color);
 }
+/* ########## END OF UNIVERSAL STYLES ########## */
 /* ########## HEADER SECTION ########## */
 header {
   position: fixed;
@@ -133,6 +135,7 @@ header .search-bar-container label {
 header .search-bar-container label:hover {
   color: var(--main-color);
 }
+/* ########## END OF HEADER SECTION ########## */
 /* ########## LOGIN FORM ########## */
 .login-form-container {
   position: fixed;
@@ -214,6 +217,7 @@ header .search-bar-container label:hover {
   cursor: pointer;
   display: none;
 }
+/* ########## END OF LOGIN FORM ########## */
 /* ########## HOME SECTION ########## */
 .home {
   min-height: 100vh;
@@ -229,7 +233,7 @@ header .search-bar-container label:hover {
 }
 .home .content h3 {
   font-size: 4.5rem;
-  color: #fff;
+  color: var(--main-color);
   text-transform: uppercase;
   text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
 }
@@ -266,6 +270,7 @@ header .search-bar-container label:hover {
 .home .controls .vid-btn.active {
   background: var(--main-color);
 }
+/* ########## END OF HOME SECTION ########## */
 /* ########## BOOK SECTION ########## */
 .book .row {
   display: flex;
@@ -303,6 +308,7 @@ header .search-bar-container label:hover {
   padding: 1rem 0;
   color: #666;
 }
+/* ########## END OF BOOK SECTION ########## */
 /* ########## PACKAGES SECTION ########## */
 .packages .box-container {
   display: flex;
@@ -612,5 +618,10 @@ header .search-bar-container label:hover {
   }
   .contact .row form .inputBox input {
     width: 100%;
+  }
+}
+@media (max-height: 500px) {
+  .login-form-container {
+    top: -170%;
   }
 }
