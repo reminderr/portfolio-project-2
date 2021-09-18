@@ -1,11 +1,17 @@
-let searchBtn = document.querySelector('#search-btn');
-let searchBar = document.querySelector('.search-bar-container');
-let formBtn = document.querySelector('#login-btn');
-let loginForm = document.querySelector('.login-form-container');
-let formClose = document.querySelector('#form-close');
-let menu = document.querySelector('#menu-bar');
-let navbar = document.querySelector('.navbar');
-let videoBtn = document.querySelectorAll('.vid-btn');
+let select = el => {
+  return document.querySelector(el)
+}
+let selectAll = el => {
+  return document.querySelectorAll(el)
+}
+let searchBtn = select('#search-btn');
+let searchBar = select('.search-bar-container');
+let formBtn = select('#login-btn');
+let loginForm = select('.login-form-container');
+let formClose = select('#form-close');
+let menu = select('#menu-bar');
+let navbar = select('.navbar');
+let videoBtn = selectAll('.vid-btn');
 
 window.onscroll = () => {
   searchBtn.classList.remove('fa-times');
@@ -34,10 +40,10 @@ formClose.addEventListener('click', () => {
 /* ########## VIDEO ########## */
 videoBtn.forEach(btn => {
   btn.addEventListener('click', () => {
-    document.querySelector('.controls .active').classList.remove('active');
+    select('.controls .active').classList.remove('active');
     btn.classList.add('active');
     let src = btn.getAttribute('data-src');
-    document.querySelector('#video-slider').src = src;
+    select('#video-slider').src = src;
   });
 });
 /* ########## SWIPER REVIEW ########## */
